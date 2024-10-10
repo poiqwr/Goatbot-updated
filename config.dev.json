@@ -30,7 +30,7 @@
   "GENDER": "MALE",
   "nickNameBot": "Bot",
   "FACEBOOK": "bawal malaman",
-  "prefix": "-",
+  "prefix": ".",
   "database": {
     "type": "sqlite",
     "uriMongodb": "",
