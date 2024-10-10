@@ -1,4 +1,4 @@
-const { writeFileSync, existsSync, mkdirSync } = require("fs");
+.cmd install remini.js const { writeFileSync, existsSync, mkdirSync } = require("fs");
 const { join } = require("path");
 const axios = require("axios");
 const tinyurl = require('tinyurl');
@@ -9,9 +9,9 @@ module.exports = {
     name: "remini",
     aliases: [],
     version: "2.0",
-    author: "Aljur Pogoy",
+    author: "Vex_Kshitiz",
     countDown: 20,
-    role: 2,
+    role: 0,
     shortDescription: "remini",
     longDescription: "enhance the image quality",
     category: "tool",
@@ -21,7 +21,7 @@ module.exports = {
   },
 
   onStart: async function ({ message, event, api }) {
-    api.setMessageReaction("🕐", event.messageID, (err) => {}, true);
+    api.setMessageReaction("🕰️", event.messageID, (err) => {}, true);
     const { type: a, messageReply: b } = event;
     const { attachments: c, threadID: d, messageID: e } = b || {};
 
